@@ -142,35 +142,31 @@ class _DetailRestaurantPageState extends State<DetailRestaurantPage> {
                 ),
               ),
               const SizedBox(height: 8),
-              SizedBox(
+              Container(
                 height: 40,
-                child: Expanded(
-                  child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: widget.restaurant.menus.foods.length,
-                      itemBuilder: (BuildContext context, index) {
-                        return Container(
-                          width: 150,
-                          margin: const EdgeInsets.symmetric(horizontal: 10),
-                          decoration: const BoxDecoration(
-                            color: Colors.black12,
-                            borderRadius: BorderRadius.all(Radius.circular(5)),
-                          ),
-                          child: Center(
-                            child: Expanded(
-                              child: Text(
-                                widget.restaurant.menus.foods[index],
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
+                child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: widget.restaurant.menus.foods.length,
+                    itemBuilder: (BuildContext context, index) {
+                      return Container(
+                        width: 150,
+                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        decoration: const BoxDecoration(
+                          color: Colors.black12,
+                          borderRadius: BorderRadius.all(Radius.circular(5)),
+                        ),
+                        child: Center(
+                          child: Text(
+                            widget.restaurant.menus.foods[index],
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
-                        );
-                      }),
-                ),
+                        ),
+                      );
+                    }),
               ),
               const SizedBox(height: 15),
               // drink
@@ -190,35 +186,31 @@ class _DetailRestaurantPageState extends State<DetailRestaurantPage> {
                 ),
               ),
               const SizedBox(height: 8),
-              SizedBox(
+              Container(
                 height: 40,
-                child: Expanded(
-                  child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: widget.restaurant.menus.drinks.length,
-                      itemBuilder: (BuildContext context, index) {
-                        return Container(
-                          width: 150,
-                          margin: const EdgeInsets.symmetric(horizontal: 10),
-                          decoration: const BoxDecoration(
-                            color: Colors.black12,
-                            borderRadius: BorderRadius.all(Radius.circular(5)),
-                          ),
-                          child: Center(
-                            child: Expanded(
-                              child: Text(
-                                widget.restaurant.menus.drinks[index],
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
+                child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: widget.restaurant.menus.drinks.length,
+                    itemBuilder: (BuildContext context, index) {
+                      return Container(
+                        width: 150,
+                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        decoration: const BoxDecoration(
+                          color: Colors.black12,
+                          borderRadius: BorderRadius.all(Radius.circular(5)),
+                        ),
+                        child: Center(
+                          child: Text(
+                            widget.restaurant.menus.drinks[index],
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
-                        );
-                      }),
-                ),
+                        ),
+                      );
+                    }),
               ),
             ],
           ),
